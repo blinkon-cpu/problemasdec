@@ -7,8 +7,8 @@ int main() {
     printf("Digite a medida em pes:\n");
     scanf("%f", &pes);
 
-    polegadas = pes * 12;      // 1 pé = 12 polegadas
-    jardas    = pes / 3;       // 1 jarda = 3 pés
+    polegadas = pes * 12;  // 1 pé = 12 polegadas
+    jardas    = pes / 3;  // 1 jarda = 3 pés
     milhas = pes / 5280; // 1 milha = 1760 jardas
 
     printf("Polegadas = %.1f\n", polegadas);
