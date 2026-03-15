@@ -2,18 +2,20 @@
 #include <stdlib.h>
 
 int main() {
-    double pes, polegadas, jardas, milhas;
+    float pes, polegadas, jardas, milhas;
 
-    printf("Digite a medida em pes: ");
-    scanf("%lf", &pes);
+    // Caso haja necessidade de mais de 7 dígitos, usar double ao inves de float
 
-    polegadas = pes * 12.0;       // 1 pe = 12 polegadas
-    jardas    = pes / 3.0;        // 1 jarda = 3 pes
-    milhas    = jardas / 1760.0;  // 1 milha = 1760 jardas
+    printf("Digite a medida em pes:\n");
+    scanf("%f", &pes);
 
-    printf("Polegadas = %.4lf\n", polegadas);
-    printf("Jardas = %.4lf\n", jardas);
-    printf("Milhas = %.6lf\n", milhas);
+    polegadas = pes * 12;      // 1 pé = 12 polegadas
+    jardas    = pes / 3;       // 1 jarda = 3 pés
+    milhas = pes / 5280; // 1 milha = 1760 jardas
+
+    printf("Polegadas = %.1f\n", polegadas);
+    printf("Jardas = %.1f\n", jardas);
+    printf("Milhas = %.2f\n", milhas);
 
     return 0;
 }
