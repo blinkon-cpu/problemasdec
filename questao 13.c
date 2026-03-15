@@ -4,8 +4,6 @@
 int main() {
     float pes, polegadas, jardas, milhas;
 
-    // Caso haja necessidade de mais de 7 dígitos, usar double ao inves de float
-
     printf("Digite a medida em pes:\n");
     scanf("%f", &pes);
 
