@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float salarioBase, gratificacao, imposto, salarioFinal;
+    
+	printf("Digite o salario base: \n");
+    scanf("%f", &salarioBase);
+	gratificacao = salarioBase * 0.05;
+    imposto = salarioBase * 0.07;
+    salarioFinal = salarioBase + gratificacao - imposto;
+    printf("Salario a receber: %.2f\n", salarioFinal);
+
+    return 0;
+}
